@@ -63,7 +63,7 @@ The tpu_util.sh is a useful script used to start a TPU VM and install dependenci
 ```shell
 python3 -m coh.coh_train \
     --mp_mesh_dim=16 \
-    --load_opt_config='huggingface::EleutherAI/gpt-j-6B' \
+    --load_gptj_config='huggingface::EleutherAI/gpt-j-6B' \
     --model='gptj' \
     --pretrain_dataset.split='train' \
     --pretrain_dataset.path='c4' \
